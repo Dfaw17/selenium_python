@@ -19,7 +19,7 @@ def open_driver():
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-site-isolation-trials")
     options.add_argument("--user-data-dir")
-    options.add_argument("--ignore-certificate-errors")
+    # options.add_argument("--ignore-certificate-errors")
     driver = webdriver.Chrome(options=options)
     driver.maximize_window()
     driver.implicitly_wait(15)
