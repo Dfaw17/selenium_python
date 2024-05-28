@@ -1,8 +1,9 @@
 from selenium.webdriver.common.by import By
 
-et_username = [By.ID, "user-name"]
-et_pwd = [By.ID, "password"]
-btn_login = [By.ID, "login-button"]
-icon_cart = [By.XPATH, '//*[@class="shopping_cart_link"]']
-hamburger_menu = [By.ID, 'react-burger-menu-btn']
-btn_logout = [By.ID, 'logout_sidebar_link']
+btn_login = [By.XPATH, "//*[text()='Log In']"]
+et_email = [By.XPATH, "(//input)[1]"]
+et_pwd = [By.XPATH, "(//input)[2]"]
+btn_submit = [By.XPATH, "//button[@type='submit']"]
+page_auth = [By.XPATH, "//h1[text()='Google Authenticator Code']"]
+input_auth = [By.XPATH, "//div[@class='gap-2']"]
+menu_dashboard = [By.XPATH, "//p[text()='Dashboard']"]

@@ -1,4 +1,4 @@
-url_web = "https://www.saucedemo.com/"
-username_valid = "standard_user"
-username_lock = "locked_out_user"
-pwd_valid = "secret_sauce"
+# ======================== CREDS ========================
+username_stag = "pintupro-preview"
+password_stag = "FJ6KnNeXU3R5cV25sSA39bbXvb6Ttiy4gudt"
+url_web = f"https://{username_stag}:{password_stag}@pro.staging.pintu.co.id/"
