@@ -8,7 +8,9 @@ from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture()
 def open_driver():
+    PROXY = "11.456.448.110:8080"
     options = Options()
+    options.add_argument('--proxy-server=%s' % PROXY)
     options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
