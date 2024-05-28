@@ -32,3 +32,9 @@ jobs:
 
       - name: Run test with pytest
         run: pytest test/ || true
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: screenshoot
+          path: tmp/

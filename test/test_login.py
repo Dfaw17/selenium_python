@@ -18,5 +18,8 @@ def test_login_normal(open_driver):
     open_driver.find_element(By.XPATH, "(//input)[3]").send_keys("8")
     open_driver.find_element(By.XPATH, "(//input)[4]").send_keys("8")
     open_driver.find_element(By.XPATH, "(//input)[5]").send_keys("9")
+    open_driver.get_screenshot_as_file('tmp/1.png')
     open_driver.find_element(By.XPATH, "(//input)[6]").send_keys("9")
+    open_driver.get_screenshot_as_file('tmp/2.png')
     check_display(open_driver, menu_dashboard)
+    open_driver.get_screenshot_as_file('tmp/3.png')
