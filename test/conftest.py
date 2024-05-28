@@ -19,6 +19,7 @@ def open_driver():
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--disable-site-isolation-trials")
     options.add_argument("--allow-file-access-from-files")
+    options.add_argument("--allow-running-insecure-content")
     options.add_argument("--ignore-certificate-errors")
     driver = webdriver.Chrome(options=options)
     driver.maximize_window()
