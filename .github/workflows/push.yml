@@ -1,4 +1,4 @@
-name: Automation Web Playwright
+name: Automation Web Selenium
 
 on:
   pull_request:
@@ -20,6 +20,10 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+
+      - uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: 120
 
       - name: Install dependencies
         run: |
