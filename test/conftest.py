@@ -15,7 +15,7 @@ def open_driver():
     options.add_argument("--disable-web-security")
     driver = webdriver.Chrome(options=options)
     driver.maximize_window()
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(15)
     return driver
 
 
