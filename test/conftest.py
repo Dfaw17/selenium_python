@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture()
 def open_driver():
-    proxy_server_url = "117.54.114.98:80"
+    proxy_server_url = "117.54.114.98"
     options = Options()
     options.add_argument(f'--proxy-server={proxy_server_url}')
     options.add_argument("--headless")
