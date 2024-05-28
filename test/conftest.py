@@ -12,7 +12,7 @@ def open_driver():
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--remote-allow-origins=*")
     options.add_argument("--window-size=1920,1080")
-    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--disable-web-security")
     driver = webdriver.Chrome(options=options)
     driver.maximize_window()
     driver.implicitly_wait(5)
