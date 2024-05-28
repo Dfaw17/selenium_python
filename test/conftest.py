@@ -23,7 +23,6 @@ def open_driver():
 @pytest.fixture(scope='function', autouse=True)
 def hook(request, open_driver):
     open_driver.get(url_web)
-    time.sleep(2)
     yield
     open_driver.quit()
 
